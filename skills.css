@@ -1,0 +1,95 @@
+
+html,body{
+    display: grid;
+    height: fit-content;
+    place-items: center;
+  }
+ 
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: transparent;
+}
+
+.skill-container >h1{
+text-align: center;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #333;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #121;
+  font-weight: 600;
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 3s 0s;
+  -moz-animation: load 3s 0s;
+  -o-animation: load 3s 0s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bar.html5::before{
+  background-color: rgb(246, 240, 240);
+  width: calc(70% - 10px);
+}
+.bar.css3::before{
+  background-color: rgb(250, 244, 244);
+  width: calc(70% - 10px);
+}
+.bar.javascript::before{
+  background-color: rgb(250, 246, 246);
+  width: calc(40% - 10px);
+}
+.bar.kotlin::before{
+    background-color: rgb(251, 246, 246);
+  width: calc(50% - 10px);
+}
+.bar.java::before{
+    background-color: rgb(250, 244, 244);
+  width: calc(50% - 10px);
+}
+.bar.php::before{
+  background-color: rgb(246, 241, 241);
+width: calc(35% - 10px);
+}
+
+.credit{
+  text-align: center;
+  color: #000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.credit a{
+  text-decoration: none;
+  color:#000;
+  font-weight: bold;
+}
+
