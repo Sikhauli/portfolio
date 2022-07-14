@@ -1,77 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>
-        Sikhauli Vhuthuhawe
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sikhauli Vhuthuhawe</title>
+      <link rel = "icon" href ="logo_transparent.png" type = "image/x-icon">
+    <link rel="stylesheet" href="style..css" />
+    <link rel="stylesheet" href="footer.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <link rel = "icon" href ="logo_transparent.png" type = "image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<nav class="navigation"> 
-    <div class="image-logo">
-       <a href="index.html"> <img src="logo_transparent.png"></a>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="menu">
+          <div class="image-logo">
+           <a href="index.html"> <img src="logo_transparent.png"></a>
+          </div>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="main">
+         
+            <div class="video-container">
+              <video class="background-video" autoplay loop muted poster="vhuthuPic.jpg">
+              <source src="background-video-3.mp4" type="video/mp4">
+              </video>
+            </div>
+
+           <header> 
+            <div class="overlay">
+              <div class="inner">
+                <h2 class="title">
+                  <main>
+
+                  </main>
+                </h2><br>
+                <p>
+                 Welcome To My Online Portfolio
+                </p>
+                <button class="read-more-btn">Read more</button>
+              </div>
+            </div>
+          </header> 
+        </div>
+
+        <script>
+
+            let main = document.querySelector("main");
+
+            let title = 'Sikhauli Vhuthuhawe';
+
+            main.innerHTML = title;
+
+        </script>
+
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="links">
+
+        <ul>
+          <li>
+            <a href="index.html" style="--i: 0.05s;">Home</a>
+          </li>
+          <li>
+            <a href="About.html" style="--i: 0.1s;">About</a>
+          </li>
+          <li>
+            <a href="Contact.html" style="--i: 0.15s;">Contact Me</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <ul>
-        <li><a href="Contact.html">Contact us</a></li>
-        <li><a href="About.html">About me</a></li>
-        <li><a href="index.html">Home </a></li>
-    </ul>
-</nav>
-<div class="video-container">
-    <h1>Welcome To My Portfolio</h1>
-    <video class="background-video" autoplay loop muted poster="vhuthuPic.jpg">
-        <source src="background-video-3.mp4" type="video/mp4">
-    </video>
-</div>
+
+
 <div class="body-container">
     <div class="body-image-right">
       <img src="images/vhuthu..jpg">
     </div>
     <div class="about-content">
-        <p id="name">Sikhauli Vhuthuhawe</p>
+        <h2>
+        <p id="name">
+          Sikhauli Vhuthuhawe
+        </p>
+        </h2>
         <br>
         <article id="summary-about">
-            
-        zxcretttbhv bhvgcfxdr kbgyft kbhnbjhvg kjbhvgtf <br>
-        nkjbhhtf hubgy jnbhvgcf jbhuygvftc knjbhvgcft <br> 
-        nkjbhvg uhbygtf nuhygtf iugyt
+        1.1-
+          ReactJS Developer with 2 months of Learning experience in  Development from June 2022 using <br>
+             -Javascript<br>
+             -Typescript<br>
+             -Html<br>
+             -Css<br>
+        <br>
+         1.2- 
+          Android Development with a learning experience of over 2 years using <br> 
+            [Java and Kotlin]<br>
+             <p>-MVVM,Databinding,ViewBinding,Retrofit</p>
+             <p>-RoomDB,Kotlin Couritine,REST API</p>
+             <p>-Livedata,Dependency Injection</p>
+             <p>-Navigation Component</p>
 
         </article>
 
-        <button>Button</button>
+        <button id="btn-index">Button</button>
     </div>
+
 </div>
 
+
+
 <footer>
-
-    <div class="footer-contact">
-            <p id="contact-me">CONTACT ME</p>
-            <div id="contacts">
-                <ol>
-                    <li>Location</li><br>
-                    <li>+2779 7732 506</li><br>
-                    <li>Sikhaulivl@gmail.com</li><br>
-                </ol>
-            </div>
-
-    </div>
-    
-    <div class="socials_icons">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/sikhauli-vhuthuhawe-87979a1a2/" target="_blank"><img src="images/linkedin.png" height="25px" width="25px" alt="linkedin"></a></li>
-          <li><a href="#" target="_blank"><img src="images/facebook.png" height="25px" width="25px" alt="facebook"></a></li>
-          <li><a href="www.twitter.com/sikhaulivhuthu" target="_blank"><img src="images/twitter.png" height="25px" width="25px" alt="twitter"></a></li> 
-          <li><a href="https://github.com/Sikhauli" target="_blank"><img src="images/github.png" height="25px" width="25px" alt="github"></a></li>
-          <li><a href="www.instagram.com/sikhaulivhuthu/" target="_blank"><img src="images/instagram.png" height="25px" width="25px" alt="instagram"></a></li>
-       </ul>      
-      </div>
-
+  <div class="footer-content">
+    <h3>ReactJS, React Native & Android Developer </h3>
+      <p>Reach me on my Social media and Coding play ground where you can get to understand more of my daily life.</p>
+      <ul class="socials">
+      <li><a href="https://www.facebook.com/vhuthuhawe.sikhauli"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/Sikhaulivhuthu"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="https://github.com/Sikhauli"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/sikhauli-vhuthuhawe-87979a1a2/"><i class="fa fa-linkedin-square"></i></a></li>
+    </ul>
+  </div>
 </footer>
 
-</body>
+
+
+    <script src="app.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+
+ 
 
 </html>
+

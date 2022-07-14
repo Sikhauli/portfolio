@@ -3,49 +3,27 @@ body {
     color: #030303;
     padding: 0;
     overflow-x: hidden;
+    background-color: rgb(176, 172, 164);
+
   }
-  
- nav{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-} 
 
-footer{
-    height: 300px;
-    width: 100%;
-    background-color: #333;
-    margin-top: 25px;
-}
-
-.navigation{
-    
-    width: 100%;
-    height: 100px;
-    background-color: #333;
-    overflow: hidden;
-    
-}
-
- .navigation li {
-    list-style-type: none;
-    float: right;
-    text-align: center;
-    padding: 28px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    
-}
 .image-logo{
     float: left;
     height: 100%;
-    width: 100px;
+    width: 8vw;
 }
 
 .video-container{
-     width: 100%;
-     height: 500px;
+     width: 100vw;
+     min-height: 100vh;
+     position: relative;
 }
+/* 
+.video-container .bg-img img{
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+} */
 
 .video-container h1{
     font-weight: bolder;
@@ -70,15 +48,22 @@ footer{
 }
 
 .body-container{
-    height: 400px;
+    height: 63vh;
     width: 100%;
     background-color: transparent;
 }
 
 .body-image-right{
-    height: 400px;
-    width: 400px;
+    height: 63vh;
+    width: 40vw;
     float: right;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+     
 }
 
 img{
@@ -88,9 +73,10 @@ img{
 }
 
 .about-content{
-    height: 100%;
-    width: 770px;
-    margin-left: 90px;
+    height: 63vh;
+    width: 50vw;
+    margin-left: 5vw;
+    /* background-color: black; */
 }
  
 #name{
@@ -106,9 +92,8 @@ img{
 }
 
 button{
+margin-top: 39px; 
 margin-left: 39px;
-margin-top: 39px;
-
 }
 
 #contact-me{
@@ -144,21 +129,19 @@ li :hover{
   } 
 
   .about-container {
-    height: 410px;
+    height: 73vh;
     width: 100%;
-    background-color: transparent;
-    margin-top: 10px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
-                0 2px 4px rgba(0,0,0,0.07), 
-                0 4px 8px rgba(0,0,0,0.07), 
-                0 8px 16px rgba(0,0,0,0.07),
-                0 16px 32px rgba(0,0,0,0.07), 
-                0 32px 64px rgba(0,0,0,0.07);
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    
 }
 
 .about-container #about{
     font-size: larger;
     font-size: 30px;
+    margin-top: 2vh;
+    text-align: center;
+    padding-bottom: 5vh;
     text-decoration: wavy;
     font-weight: bolder;
     font-style: normal;
@@ -166,37 +149,34 @@ li :hover{
 }
 
 .pic-about{
-    margin-left: 40px;
-    height: 300px;
-    width: 300px;
+    margin-left: 4vw;
+    height: 45vh;
+    width: 25vw;
 }
 
- #about{
-    margin-left: 39px;
-    margin-top: 0;
- }
   
  .info{
-    height: 400px;
-    width: 900px;
+    height: 45vh;
+    width: 70vw;
+    margin-right: 1vw;
     background-color: transparent;
     float: right;
-    margin-top: 50px;
  }
 
  .services{
 
-    height: 300px;
+    height: 50vh;
     width: 100%;
-    background-color: transparent;
+    margin-top: 5vh;
 
  }
 
  .android{
-    height: 300px;
-    width: 405px;
+    height: 50vh;
+    width: 32vw;
     float: left;
-    padding-top: 10px;
+    margin-left: 1vw;
+    padding-top: 1vh;
     text-align: center;
     border-radius: 25px;
     border: 2px solid #333;
@@ -216,203 +196,140 @@ li :hover{
     background-color: #333
 }
 
- .web{
-
-    height: 300px;
-    width: 405px;
-    float: left;
-    padding-top: 10px;
-    text-align: center;
-    border-radius: 25px;
-    border: 2px solid #333;
-    margin-left: 10px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
-                0 2px 4px rgba(0,0,0,0.07), 
-                0 4px 8px rgba(0,0,0,0.07), 
-                0 8px 16px rgba(0,0,0,0.07),
-                0 16px 32px rgba(0,0,0,0.07), 
-                0 32px 64px rgba(0,0,0,0.07);
-}
- 
-
-.web:hover{
-    font-style: oblique;
-    font-size: 20px;
-    color: antiquewhite;
-    background-color: #333
-}
-
-.software{
-
-    height: 300px;
-    width: 405px;
-    float: left;
-    padding-top: 10px;
-    text-align: center;
-    border-radius: 25px;
-    border: 2px solid #333;
-    margin-left: 10px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
-                0 2px 4px rgba(0,0,0,0.07), 
-                0 4px 8px rgba(0,0,0,0.07), 
-                0 8px 16px rgba(0,0,0,0.07),
-                0 16px 32px rgba(0,0,0,0.07), 
-                0 32px 64px rgba(0,0,0,0.07);
-}
-
-.software:hover{
-    font-style: oblique;
-    font-size: 20px;
-    color: antiquewhite;
-    background-color: #333
-}
-
 /* Image animation */
 
 .body-image-right img{
     transition: 1s ease;
     }
     
-    .body-image-right img:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+.body-image-right img:hover{
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
     transition: 1s ease;
     border-radius: 25px;
 
     }
 
-    .pic-about img{
-        transition: 1s ease;
-        }
+.pic-about img{ 
+
+    transition: 1s ease;
+
+}
+   
+#btn-index{
+    width: 7vw;
+    height: 5vh;
+}
         
-        .pic-about img:hover{
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2);
-        transition: 1s ease;
-        border-radius: 25px;
+.pic-about img:hover{
 
-        }
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    transition: 1s ease;
+    border-radius: 25px;
 
-        .skill-container{
-            width: 100%;
-            height: 400px;
-            background-color:transparent;
-            margin: 20px;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
-                        0 2px 4px rgba(0,0,0,0.07), 
-                        0 4px 8px rgba(0,0,0,0.07), 
-                        0 8px 16px rgba(0,0,0,0.07),
-                        0 16px 32px rgba(0,0,0,0.07), 
-                        0 32px 64px rgba(0,0,0,0.07);
+ }
+
+.skill-container{
+    width: 100vw;
+    height: 60vh;
+    margin-top: 5vh;
+    padding-top: 2vh;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
         }
         
         .get {
             display:none;
         }
-        
-        #diagram {
-            float:left;
-            width:600px;
-            height:600px;
+
+        .img{
+            background-color: transparent;
+            font: 1em sans-serif;
+            
         }
 
-        .img-birth{
-            width: 20px;
-            height: 20px;           
+        svg{
+
+            height: 3vh;
+            width: 3vw;
+            margin-top: 5px;
+
+        }
+
+        .img img{
+
+            width: 5vh;
+            height: 5vw;
+            
         }
         
-        .img-phone{
-            width: 20px;
-            height: 20px;
-        }
-        .img-location{
-            width: 20px;
-            height: 20px;
-        }
-        .img-email{
-            width: 20px;
-            height: 20px;
-        }
         .socials_icons{
-            height: 40px;
-            width: 60%;
-            margin-left: 39.5%;
+            height: 8vh;
+            width: 30vw;
+            margin-left: 40vw;
         }
 
         .socials_icons img{
-            height: 20px;
-            width: 20px;
-            border-radius: 10px;
+            height: 3vh;
+            width: 2vw;
+            border-radius: 5px;
         }
 
         .socials_icons li{
             float: left;
-            margin-left: 20px;
+            margin-left: 2vw;
             list-style: none;
             text-align: center;
-            margin-top: 10px;
+            margin-top: 1vh;
         }
 
         /* Contact Page CSS */
 
-       .welcome-page{
-        height: 400px;
-        width: 100%;
-        background-image: url(images/conntact-bg2.jpeg);
-        text-align: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        line-height: 400px;
-        }
-
+       
       .contact-container{
 
-        height: 500px;
-        width: 100%;
-        background: transparent;
+        height: 90vh;
+        width: 100vw;
+        /* background: rgb(176, 172, 164); */
         overflow-x: hidden;
         padding: 10px;
 
       }
 
       .map-location{
-        height: 100%;
-        width: 70%;
+        height: 75vh;
+        width: 69vw;
         margin-right: 1%;
         float: left;
-        /* border: 2px #333 solid; */
         background-color: transparent ;
 
       }
     
       .call-us{
-        height: 100%;
+        height: 75vh;
         width: 27%;
         float: right;
-        margin-right: 10px;
+        margin-right: 1vw;
         background-color: #333;
       }
 
       .text-us{
-        height: 300px;
+        height: 50vh;
         width: 100%;
-        background-color: transparent;
+        /* background-color: rgb(176, 172, 164); */
         float: left;
       }
 
       .call-us li {
         list-style: none;
-        margin-bottom: 20px;
-        
-        }
 
-    .call-us li img {
-        height: 15px;
-        width: 15px;
-        margin-right: 10px;
-     
         }
 
     .contact-container h1{
@@ -426,22 +343,22 @@ li :hover{
       } 
 
     form{
-        height: 100%;
-        width: 100%;
+        height: 50vh;
+        width: 100vw;
         padding: 10px;
     }
 
     form .name{
-        height: 60px;
-        width: 50%;
+        height: 10vh;
+        width: 30vw;
         border-radius: 15px;
         border: 2px solid #ccc;
         margin-bottom: 5px;
     }
 
     form .message{
-        height: 200px;
-        width: 46%;
+        height: 32vh;
+        width: 65vw;
         float: right;
         margin-right: 25px;
         border-radius: 15px;
@@ -450,36 +367,54 @@ li :hover{
 
     }
     form .subject{
-        height: 60px;
-        width: 50%;
+        height: 10vh;
+        width: 30vw;
         border-radius: 15px;
         border: 2px solid #ccc;
         margin-bottom: 5px;
 
     }
     form  .email{
-        height: 60px;
-        width: 50%;
+        height: 10vh;
+        width: 30vw;
         border: 2px solid #ccc;
         float: left;
         border-radius: 15px;
     }
 
-     .text-us button{
-        height: 50px;
-        width: 150px;
-        float: right;
+     /* .text-us  */
+     button{
+        height: 7vh;
+        width: 10vw;
+        /* float: right; */
         border-radius: 25px;
         border: 2px solid #333;
     } 
 
-    .text-us button:hover {
+    /* .text-us  */
+     button:hover {
         background-color: #333;
         color: whitesmoke;
     } 
 
     .email-text-container{
-        height: 300px;
-        width: 100%;
+        height: 40vh;
+        width: 100vw;
         background-color: transparent;
     } 
+
+    .call-us h1{
+
+        margin-top: 5vh;
+        /* text-align: center; */
+        margin-bottom: 5vh;
+        text-decoration: double;
+
+    }
+    .call-us ul li{
+
+        color: #ccc;
+        margin-left: 2.6vw;
+
+
+    }
